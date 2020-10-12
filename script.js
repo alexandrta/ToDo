@@ -145,68 +145,8 @@ const loadTasksList = () => {
 loadTasksList();
 
 
-//    =================================================================================================================================================
-//taskField.addEventListener //  keydown
-// метод setAtribute
-//taskField.addEventListener("input", ...)
-//taskField.addEventListener("keydown", ...) //https://learn.javascript.ru/introduction-browser-events === https://keycode.info/ - выдает номер кнопки
-
-
-// const doneTask = function (){
-// 	document.querySelectorAll('.done').forEach(el => el.remove());
-// 	restoreLocalStorage();
-// }
-// parentElement.classList.toggle ("done") // зачеркивает 
-
-//taskField.value = '' // перезаписывает поле ввода на пустое
-
-// как по нажатию выдать функцию
-//   ====================================================================================================================================================
-//localStorage
-
-
-
-// ========= домашка 2
-// const removeTask 
-
-
-
-// const API = 
-// 	getTasks async () => {
-// 		let responce = await fetch('http://kinoha.itis.today/doc#todos');
-		
-// 		return responce.json();
-// 	},
-
-// 	addTask: async (task) => {
-// 		await fetch('http://kinoha.itis.today/doc#todos',{
-// 		method: 'POST',
-// 		headers: {
-// 			'Content-type': 'application/json;'
-// 		},
-// 	body: JSON.stringify(task)
-//  	});
-// };
-
-// const loadtasklist = 
-// 	getTasks async () => {
-// 		let responce = await fetch('http');
-
-// 		return responce.json
-// 	}
-
-// const API = 
-// 	getTasks async () => {
-// 		let responce = await fetch('http');
-
-// 		return responce.json();
-// 	}
-// =============================
 
 window.addEventListener("storage", (e) => {      // слушает все вкладки и при переклюении на другую показывается последнее значение
 	taskUl.innerHTML = ''; 
 	loadTasksList();
 });
-
-// localStorage.setItem('test', 1);
-
